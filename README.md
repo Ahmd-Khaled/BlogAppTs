@@ -63,18 +63,46 @@ A simple **Blog App** built with **TypeScript**, **Express.js**, and **Node.js**
 
 ```
 📦 blog-app
-├── 📂 src
-│   ├── 📂 controllers
-│   ├── 📂 routes
-│   ├── 📂 models
-│   ├── 📂 middleware
-│   ├── 📂 config
-│   ├── app.ts
-│   ├── server.ts
-├── 📄 package.json
-├── 📄 tsconfig.json
-├── 📄 .eslintrc.json
-├── 📄 .env
+└───src
+    │   app.controller.ts
+    │   swaggerConfig.ts
+    │
+    ├───DB
+    │   │   connection.ts
+    │   │   dbService.ts
+    │   │
+    │   └───Models
+    │           blog.model.ts
+    │           user.model.ts
+    │
+    ├───Middlewares
+    │       auth.middleware.ts
+    │       error-handler.middleware.ts
+    │       validation.middleware.ts
+    │
+    ├───Modules
+    │   ├───Auth
+    │   │   │   auth.controller.ts
+    │   │   │   auth.service.ts
+    │   │   │   auth.validation.ts
+    │   │   │
+    │   │   └───dtos
+    │   │           auth.dto.ts
+    │   │
+    │   └───Blog
+    │       │   blog.controller.ts
+    │       │   blog.service.ts
+    │       │   blog.validation.ts
+    │       │
+    │       └───dtos
+    │               blog.dto.ts
+    │
+    ├───Types
+    │       types.ts
+    │
+    └───Utils
+        └───token
+                token.ts
 ```
 
 ## Contributing
